@@ -1,6 +1,7 @@
 ﻿using cqrs.Application.Interfaces;
 using cqrs.Domain.Entities.UserAggregate;
 using cqrs.Infrastructure.InfraServices.Logging;
+using cqrs.Infrastructure.InfraServices.Notification;
 using cqrs.Infrastructure.Persistence.Context;
 using cqrs.Infrastructure.Persistence.User;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +26,7 @@ namespace cqrs.Infrastructure.Extensions
             services.AddScoped<IUserRepository, UserRepository>();
 
             //INFRASTRUCTURE SERVICES ------
+            services.AddTransient<IEmailService, EmailService>();
             services.AddTransient(typeof(ILogService<>), typeof(LogService<>));
             return services;
         }
