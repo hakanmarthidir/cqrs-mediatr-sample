@@ -1,0 +1,15 @@
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\bin\Debug\net6.0\cqrs.Application.deps.json
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\bin\Debug\net6.0\cqrs.Application.dll
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\bin\Debug\net6.0\ref\cqrs.Application.dll
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\bin\Debug\net6.0\cqrs.Application.pdb
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\bin\Debug\net6.0\cqrs.Domain.dll
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\bin\Debug\net6.0\cqrs.Domain.pdb
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\cqrs.Application.csproj.AssemblyReference.cache
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\cqrs.Application.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\cqrs.Application.AssemblyInfoInputs.cache
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\cqrs.Application.AssemblyInfo.cs
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\cqrs.Application.csproj.CoreCompileInputs.cache
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\cqrs.Application.csproj.CopyComplete
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\cqrs.Application.dll
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\ref\cqrs.Application.dll
+Z:\Volumes\mart\my-codes\cqrs-mediatr-sample\cqrs.Application\obj\Debug\net6.0\cqrs.Application.pdb
