@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using cqrs.Application.Interfaces;
@@ -19,6 +20,16 @@ namespace cqrs.Application.Behaivors
         public async Task<TRes> Handle(TReq request, CancellationToken cancellationToken, RequestHandlerDelegate<TRes> next)
         {
             this._logService.LogInformation($"Request was triggered : {typeof(TReq).FullName}");
+            Type requestType = request.GetType();
+            var props = new List<PropertyInfo>(requestType.GetProperties());
+            foreach (var prop in props)
+            {
+                var data = prop.GetValue(request, null);
+                //if (data != null) 
+                //{
+                this._logService.LogInformation($"{prop.Name} - {data}");
+                //}
+            }
             var response = await next();
             this._logService.LogInformation($"Response was created : {typeof(TRes).FullName}");
             return response;

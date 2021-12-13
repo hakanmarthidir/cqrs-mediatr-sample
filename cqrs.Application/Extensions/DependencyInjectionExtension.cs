@@ -1,4 +1,6 @@
 ﻿using cqrs.Application.Behaivors;
+using cqrs.Application.Behaviors;
+using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,7 +19,9 @@ namespace cqrs.Application.Extensions
         {
             services.AddAutoMapper(typeof(Mappers.AutoMappings));
             services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidatorBehaviour<,>));
             return services;
         }
     }
