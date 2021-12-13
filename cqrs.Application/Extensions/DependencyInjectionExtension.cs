@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using cqrs.Application.Behaivors;
+using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,6 +17,7 @@ namespace cqrs.Application.Extensions
         {
             services.AddAutoMapper(typeof(Mappers.AutoMappings));
             services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             return services;
         }
     }
