@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using cqrs.Application.Interfaces;
+﻿using cqrs.Application.Interfaces;
 using MediatR;
+using System.Reflection;
 
 namespace cqrs.Application.Behaivors
-{
-    public class LoggingBehavior<TReq, TRes> : IPipelineBehavior<TReq, TRes>
+{  
+    public class LoggingBehavior<TReq, TRes> : IPipelineBehavior<TReq, TRes> where TReq : IRequest<TRes>
     {
         private readonly ILogService<LoggingBehavior<TReq, TRes>> _logService;
 

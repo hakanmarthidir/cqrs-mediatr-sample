@@ -3,11 +3,6 @@ using cqrs.Application.Response;
 using cqrs.Application.User.Dtos;
 using cqrs.Domain.Entities.UserAggregate;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace cqrs.Application.User.Queries
 {
@@ -21,7 +16,7 @@ namespace cqrs.Application.User.Queries
             public GetAllUsersQueryHandler(IUserRepository userRepository, IMapper mapper)
             {
                 this._userRepository = userRepository;
-                this._mapper = mapper; 
+                this._mapper = mapper;
             }
 
 

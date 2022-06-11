@@ -1,12 +1,6 @@
-﻿using cqrs.Application.Interfaces;
-using cqrs.Application.Response;
+﻿using cqrs.Application.Response;
 using cqrs.Domain.Entities.UserAggregate;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace cqrs.Application.User.Commands
 {
@@ -18,7 +12,7 @@ namespace cqrs.Application.User.Commands
         public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, IServiceResponse>
         {
             private readonly IUserRepository _userRepository;
-            
+
             public CreateUserCommandHandler(IUserRepository userRepository)
             {
                 this._userRepository = userRepository;
